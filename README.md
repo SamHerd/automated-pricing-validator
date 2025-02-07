@@ -64,12 +64,31 @@ To ensure successful processing, the uploaded files must follow this structure:
 - Unmatched SKUs will be highlighted for review.
 - Download the updated **Retailer Workbook** once processing is complete.
 
+## Alternative: Excel VBA Version
+If you prefer not to use the Streamlit app, there is an alternative Excel-based solution using VBA macros.
+
+### **How the Excel VBA Version Works**
+- The Excel file contains a **macro-enabled workbook** (`.xlsm`) that automates price matching.
+- Users copy and paste their **Retailer Workbook** and **Master Workbook** into designated sheets.
+- A built-in VBA script matches SKUs and fills in the missing prices.
+- The script highlights unmatched SKUs for manual review.
+- Users can then save and export the updated file.
+
+### **When to Use the Excel Version**
+✅ If you prefer working directly in Excel.
+✅ If you are not comfortable setting up Python and running scripts.
+✅ If you need an offline solution without requiring a web app.
+
+For access to the Excel VBA version, download `Pricing_Automation_VBA.xlsm` from this repository.
+
 ## Troubleshooting
 - **Command not found?** Ensure Python and Streamlit are installed.
 - **App not opening?** Try manually opening the URL provided in the terminal.
 - **Dependency issues?** Re-run `pip install -r requirements.txt` to reinstall libraries.
 
 Once completed, your app should be fully functional! 🚀
+
+
 
 
 
