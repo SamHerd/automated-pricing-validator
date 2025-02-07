@@ -81,12 +81,15 @@ If you prefer not to use the Streamlit app, there is an alternative Excel-based 
 
 For access to the Excel VBA version, download `Pricing_Automation_VBA.xlsm` from this repository.
 
+⚠️ **Important:** Make sure to **enable macros** when opening the Excel file to allow the VBA automation to function properly.
+
 ## Troubleshooting
 - **Command not found?** Ensure Python and Streamlit are installed.
 - **App not opening?** Try manually opening the URL provided in the terminal.
 - **Dependency issues?** Re-run `pip install -r requirements.txt` to reinstall libraries.
 
 Once completed, your app should be fully functional! 🚀
+
 
 
 
