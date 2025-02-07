@@ -34,6 +34,26 @@ streamlit run price_matcher.py
 ```
 This will launch a local web server and provide a URL to access the app.
 
+## File Format Requirements
+
+To ensure successful processing, the uploaded files must follow this structure:
+
+### **Retailer Workbook (CSV or Excel)**
+| **UPC/SKU** | **Product Description**  | **Price** |
+|------------|--------------------------|----------|
+| 123456     | Sample Product 1          |          |
+| 789012     | Sample Product 2          |          |
+
+(Prices in Column C will be auto-filled by the app)
+
+### **Master Workbook (CSV or Excel)**
+| **UPC/SKU** | **Product Description**  | **Price** |
+|------------|--------------------------|----------|
+| 123456     | Sample Product 1          | 9.99  |
+| 789012     | Sample Product 2          | 14.99 |
+
+(Ensure that Column C contains accurate prices for each SKU)
+
 ## How to Use the App
 
 ### **1. Upload Your Files**
@@ -48,5 +68,9 @@ This will launch a local web server and provide a URL to access the app.
 - **Command not found?** Ensure Python and Streamlit are installed.
 - **App not opening?** Try manually opening the URL provided in the terminal.
 - **Dependency issues?** Re-run `pip install -r requirements.txt` to reinstall libraries.
+
+Once completed, your app should be fully functional! 🚀
+
+
 
 
